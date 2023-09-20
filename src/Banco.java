@@ -1,6 +1,5 @@
-package Banco;
-
 import java.util.Scanner;
+import Banco.Account;
 
 public class Banco {
 
@@ -12,7 +11,6 @@ public class Banco {
 
         var cpf = entrada.nextLong();
         Account conta = new Account(cpf);
-
         conta.info();
         conta.opcao();
 

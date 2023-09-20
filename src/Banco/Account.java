@@ -8,11 +8,11 @@ public class Account {
     double saldo = 0.0;
     OtherMethods espaco = new OtherMethods();
 
-    Account(long cpf) {
+    public Account(long cpf) {
         this.cpf = cpf;
     }
 
-    void opcao() throws InterruptedException {
+    public void opcao() throws InterruptedException {
         Scanner entrada = new Scanner(System.in);
 
         System.out.println();
@@ -72,7 +72,7 @@ public class Account {
         entrada.close();
     }
 
-    void info() {
+    public void info() {
         espaco.espacoBranco();
         System.out.println("- Suas informações -");
         System.out.printf("CPF: %d\n", cpf);
