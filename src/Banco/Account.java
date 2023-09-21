@@ -68,7 +68,6 @@ public class Account {
                 opcao();
             }
         }
-
         entrada.close();
     }
 
