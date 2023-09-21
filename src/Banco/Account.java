@@ -8,6 +8,8 @@ public class Account {
     double saldo = 0.0;
     OtherMethods espaco = new OtherMethods();
 
+    Account() {}
+
     public Account(long cpf) {
         this.cpf = cpf;
     }
