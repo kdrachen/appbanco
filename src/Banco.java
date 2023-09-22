@@ -5,7 +5,6 @@ public class Banco {
 
     public static void main(String[] args) throws InterruptedException {
         Scanner entrada = new Scanner(System.in);
-
         System.out.println("- Bem-vindo ao NaBank -");
         System.out.print("Digite seu CPF: ");
 
@@ -15,6 +14,5 @@ public class Banco {
         conta.opcao();
 
         entrada.close();
-        //Thread.sleep(3000);
     }
 }
