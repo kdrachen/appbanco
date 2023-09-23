@@ -10,7 +10,7 @@ public class Account {
     long cpf;
     double saldo = 0.0;
     OtherMethods espaco = new OtherMethods();
-    List<String> estrato = new ArrayList<>();
+    List<String> extrato = new ArrayList<>();
 
     public Account(long cpf) {
         this.cpf = cpf;
@@ -40,7 +40,7 @@ public class Account {
                     System.out.printf("Deposito realizado com sucesso, valor: R$%.2f \n", depositar);
                     System.out.printf("Saldo: R$%.2f\n", saldo);
                     System.out.println();
-                    estrato.add("Deposito: R$" + depositar);
+                    extrato.add("Deposito: R$" + depositar);
                     Thread.sleep(1500);
                     opcao();
                 }
@@ -53,7 +53,7 @@ public class Account {
                     System.out.printf("Saque realizado com sucesso, valor: R$%.2f\n", sacar);
                     System.out.printf("Saldo: R$%.2f\n", saldo);
                     System.out.println();
-                    estrato.add("Saque: R$" + sacar);
+                    extrato.add("Saque: R$" + sacar);
                     Thread.sleep(1500);
                     opcao();
                 }
@@ -107,11 +107,11 @@ public class Account {
     }
 
     public void showEstrato() {
-        System.out.println("- NaBank Seu estrato -");
+        System.out.println("- NaBank Seu extrato -");
         System.out.printf("Saldo: R$%.2f\n", saldo);
         System.out.println();
-        if (!estrato.isEmpty()) {
-            for (String lerLista: estrato) {
+        if (!extrato.isEmpty()) {
+            for (String lerLista: extrato) {
                 System.out.println(lerLista);
             }
         } else {
