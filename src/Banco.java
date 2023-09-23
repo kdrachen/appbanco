@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 import Banco.Account;
 
@@ -8,10 +9,14 @@ public class Banco {
         System.out.println("- Bem-vindo ao NaBank -");
         System.out.print("Digite seu CPF: ");
 
-        var cpf = entrada.nextLong();
-        Account conta = new Account(cpf);
-        conta.info();
-        conta.opcao();
+        try {
+            var cpf = entrada.nextLong();
+            Account conta = new Account(cpf);
+            conta.info();
+            conta.opcao();
+        } catch (InputMismatchException e) {
+            System.out.println("Digite apenas números!");
+        }
 
         entrada.close();
     }
