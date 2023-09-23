@@ -10,6 +10,7 @@
     <li>Depositar algum valor;<br></li>
     <li>Sacar;<br></li>
     <li>Ver as informações como CPF e saldo;<br></li>
+    <li>Ver extrato;<br></li>
     <li>Fechar o aplicativo.</li>
   </ul>
 </blockquote>
