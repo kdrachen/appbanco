@@ -108,8 +108,6 @@ public class Account {
 
     public void showEstrato() {
         System.out.println("- NaBank Seu extrato -");
-        System.out.printf("Saldo: R$%.2f\n", saldo);
-        System.out.println();
         if (!extrato.isEmpty()) {
             for (String lerLista: extrato) {
                 System.out.println(lerLista);
