@@ -24,7 +24,7 @@ public class Account {
         System.out.println("1) Depositar");
         System.out.println("2) Sacar");
         System.out.println("3) Informações");
-        System.out.println("4) Estrato");
+        System.out.println("4) Extrato");
         System.out.println("9) Fechar aplicativo");
         System.out.print("Digite: ");
 
