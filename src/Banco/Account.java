@@ -72,7 +72,6 @@ public class Account {
                     opcao();
                 }
 
-
                 case 9 -> {
                     espaco.espacoBranco();
                     System.out.println("Obrigado por usar nosso aplicativo!");
