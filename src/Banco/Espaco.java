@@ -1,6 +1,6 @@
 package Banco;
 
-public class OtherMethods {
+public class Espaco {
 
     void espacoBranco() {
         System.out.println();

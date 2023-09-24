@@ -9,7 +9,7 @@ public class Account {
 
     long cpf;
     double saldo = 0.0;
-    OtherMethods espaco = new OtherMethods();
+    Espaco espaco = new Espaco();
     List<String> extrato = new ArrayList<>();
 
     public Account(long cpf) {
