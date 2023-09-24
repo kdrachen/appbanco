@@ -86,7 +86,7 @@ public class Account {
                 default -> {
                     System.out.println();
                     System.out.println("- Número inválido! -");
-                    System.out.println("Números válidos!");
+                    System.out.println("Números válidos:");
                     System.out.println("1, 2, 3, 4 e 9.");
                     System.out.println("--------------------");
                     Thread.sleep(1000);
