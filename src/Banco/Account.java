@@ -39,7 +39,6 @@ public class Account {
                     saldo += depositar;
                     System.out.printf("Deposito realizado com sucesso, valor: R$%.2f \n", depositar);
                     System.out.printf("Saldo: R$%.2f\n", saldo);
-                    System.out.println();
                     extrato.add("Deposito: R$" + depositar);
                     Thread.sleep(1500);
                     opcao();
@@ -52,7 +51,6 @@ public class Account {
                     saldo -= sacar;
                     System.out.printf("Saque realizado com sucesso, valor: R$%.2f\n", sacar);
                     System.out.printf("Saldo: R$%.2f\n", saldo);
-                    System.out.println();
                     extrato.add("Saque: R$" + sacar);
                     Thread.sleep(1500);
                     opcao();
