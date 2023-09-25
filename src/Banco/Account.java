@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Account {
 
     long cpf;
-    double saldo = 0.00;
+    private double saldo = 0.00;
     Espaco espaco = new Espaco();
     List<String> extrato = new ArrayList<>();
 
