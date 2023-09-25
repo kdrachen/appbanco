@@ -12,7 +12,6 @@ public class Banco {
         try {
             var cpf = entrada.nextLong();
             Account conta = new Account(cpf);
-            conta.info();
             conta.opcao();
         } catch (InputMismatchException e) {
             System.out.println("Digite apenas números!");
