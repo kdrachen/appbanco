@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Account {
 
     long cpf;
-    double saldo = 0.0;
+    double saldo = 0.00;
     Espaco espaco = new Espaco();
     List<String> extrato = new ArrayList<>();
 
@@ -57,7 +57,7 @@ public class Account {
                         opcao();
                     } else {
                         System.out.println("Você não tem o saldo suficiente para conseguir sacar!");
-                        System.out.println("Você tem o saldo " + saldo + "!");
+                        System.out.println("Você tem o saldo R$" + saldo + "!");
                         System.out.println("Só poderá sacar se o seu saldo final for maior ou igual a 0.0!");
                         Thread.sleep(2000);
                         opcao();
