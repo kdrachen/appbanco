@@ -12,6 +12,7 @@ public class Account {
     Espaco espaco = new Espaco();
     List<String> extrato = new ArrayList<>();
 
+    public Account() {}
     public Account(long cpf) {
         this.cpf = cpf;
     }
