@@ -39,7 +39,7 @@ public class Account {
                     saldo += depositar;
                     System.out.printf("Deposito realizado com sucesso, valor: R$%.2f \n", depositar);
                     System.out.printf("Saldo: R$%.2f\n", saldo);
-                    extrato.add("Deposito: R$" + depositar);
+                    extrato.add("Deposito: R$+" + depositar);
                     Thread.sleep(1500);
                     opcao();
                 }
@@ -48,12 +48,20 @@ public class Account {
                     espaco.espacoBranco();
                     System.out.print("Digite a quantidade: ");
                     double sacar = entrada.nextDouble();
-                    saldo -= sacar;
-                    System.out.printf("Saque realizado com sucesso, valor: R$%.2f\n", sacar);
-                    System.out.printf("Saldo: R$%.2f\n", saldo);
-                    extrato.add("Saque: R$" + sacar);
-                    Thread.sleep(1500);
-                    opcao();
+                    if (sacar <= saldo) {
+                        saldo -= sacar;
+                        System.out.printf("Saque realizado com sucesso, valor: R$%.2f\n", sacar);
+                        System.out.printf("Saldo: R$%.2f\n", saldo);
+                        extrato.add("Saque: R$-" + sacar);
+                        Thread.sleep(1500);
+                        opcao();
+                    } else {
+                        System.out.println("Você não tem o saldo suficiente para conseguir sacar!");
+                        System.out.println("Você tem o saldo " + saldo + "!");
+                        System.out.println("Só poderá sacar se o seu saldo final for maior ou igual a 0.0!");
+                        Thread.sleep(2000);
+                        opcao();
+                    }
                 }
 
                 case 3 -> {
