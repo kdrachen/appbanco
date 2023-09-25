@@ -23,7 +23,7 @@ public class RegistroCPF {
                 conta.opcao();
             } else {
                 espaco.espacoBranco();
-                System.out.println("O seu CPF têm " + convert + " dígitos!");
+                System.out.println("O seu CPF tem " + convert + " dígitos!");
                 System.out.println("Deve ser escrito sem traço ou letra e com no mínimo 11 dígitos!");
                 Thread.sleep(2000);
                 espaco.espacoBranco();
