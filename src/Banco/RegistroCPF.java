@@ -13,8 +13,8 @@ public class RegistroCPF {
         System.out.print("Digite seu CPF: ");
 
         try {
-            Long cpf = entrada.nextLong();
-            Integer convert = cpf.toString().length();
+            Long cpf = (Long) entrada.nextLong();
+            Integer convert = (Integer) cpf.toString().length();
 
             if (convert == 11) {
                 Account conta = new Account(cpf);
@@ -24,7 +24,7 @@ public class RegistroCPF {
             } else {
                 espaco.espacoBranco();
                 System.out.printf("O seu CPF tem %d dígitos!\n", convert);
-                System.out.println("Deve ser escrito sem traço ou letra e com no mínimo 11 dígitos!");
+                System.out.println("Deve ser escrito sem traço, letra e com no mínimo 11 dígitos!");
                 Thread.sleep(2000);
                 espaco.espacoBranco();
                 registrarCPF();
