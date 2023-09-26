@@ -17,7 +17,7 @@ public class RegistroCPF {
             Integer convert = cpf.toString().length();
 
             if (convert == 11) {
-                Account conta = new Account(cpf);
+                Conta conta = new Conta(cpf);
                 System.out.println("Registrado com sucesso!");
                 Thread.sleep(1500);
                 conta.opcao();

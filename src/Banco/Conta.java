@@ -5,15 +5,15 @@ import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Scanner;
 
-public class Account {
+public class Conta {
 
     private long cpf;
     private double saldo = 0.00;
     Espaco espaco = new Espaco();
     List<String> extrato = new ArrayList<>();
 
-    public Account() {}
-    public Account(long cpf) {
+    public Conta() {}
+    public Conta(long cpf) {
         this.cpf = cpf;
     }
 

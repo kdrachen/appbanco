@@ -1,6 +1,6 @@
 import Banco.RegistroCPF;
 
-public class Banco {
+public class Start {
 
     public static void main(String[] args) {
         RegistroCPF.registrarCPF();
