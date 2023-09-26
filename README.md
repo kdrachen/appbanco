@@ -2,7 +2,7 @@
 <h1>Aplicativo simples de banco usando Java!</h1>
 <p>> Status: EM DESENVOLVIMENTO!</p>
 <h1>Caminho para o método main()</h1>
-<p>> src\Banco.java</p>
+<p>> src\Start.java</p>
 <h2>Funcionalidades do programa:</h2>
 <blockquote>
   <ul>
