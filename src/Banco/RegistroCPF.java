@@ -33,6 +33,7 @@ public class RegistroCPF {
             espaco.espacoBranco();
             System.out.println("Por favor, digite apenas números.");
             System.out.println("Seu CPF deve ser escrito sem traço ou letra e com no mínimo 11 dígitos!");
+            System.out.println();
             registrarCPF();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);

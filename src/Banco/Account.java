@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class Account {
 
-    long cpf;
+    private long cpf;
     private double saldo = 0.00;
     Espaco espaco = new Espaco();
     List<String> extrato = new ArrayList<>();
@@ -102,6 +102,7 @@ public class Account {
             entrada.close();
         } catch (InputMismatchException e) {
             System.out.println("Digite apenas números!");
+            opcao();
         }
     }
 
