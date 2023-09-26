@@ -13,8 +13,8 @@ public class RegistroCPF {
         System.out.print("Digite seu CPF: ");
 
         try {
-            Long cpf = (Long) entrada.nextLong();
-            Integer convert = (Integer) cpf.toString().length();
+            Long cpf = entrada.nextLong();
+            Integer convert = cpf.toString().length();
 
             if (convert == 11) {
                 Account conta = new Account(cpf);
