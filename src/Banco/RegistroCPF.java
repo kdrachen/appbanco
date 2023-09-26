@@ -25,8 +25,7 @@ public class RegistroCPF {
                 espaco.espacoBranco();
                 System.out.printf("O seu CPF tem %d dígitos!\n", convert);
                 System.out.println("Deve ser escrito sem traço, letra e com no mínimo 11 dígitos!");
-                Thread.sleep(2000);
-                espaco.espacoBranco();
+                System.out.println();
                 registrarCPF();
             }
         } catch (InputMismatchException e) {
