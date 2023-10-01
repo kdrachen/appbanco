@@ -1,7 +1,7 @@
 # appbanco
-<h1>Aplicativo simples de banco usando Java!</h1>
+<h2>Aplicativo simples de banco usando Java!</h2>
 <p>> Status: EM DESENVOLVIMENTO!</p>
-<h1>Caminho para o método main()</h1>
+<h2>Caminho para o método main()</h2>
 <p>> src\Start.java</p>
 <h2>Funcionalidades do programa:</h2>
 <blockquote>
